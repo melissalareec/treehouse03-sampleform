@@ -1,0 +1,28 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+      margin: 0 auto;
+      font-family: 'Darker Grotesque', sans-serif;
+      background-color: #faf9f9;
+      color: #011627 ;
+  }
+
+  header {
+    margin: 0 auto;  
+    width: 100%;
+      background-color: #ffa69e;
+      padding: 20px 10px;
+      
+  }
+
+  h1 {
+      font-family: 'Bungee', cursive;  
+      font-size: 2.5em;
+      padding: 20px 10px;
+      color: white;
+      text-align: center;
+  }
