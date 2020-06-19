@@ -8,21 +8,138 @@
       margin: 0 auto;
       font-family: 'Darker Grotesque', sans-serif;
       background-color: #faf9f9;
-      color: #011627 ;
+      color: #011627;
+      font-size: 1.25em;
   }
+
+  .color {
+    background-color: #F3CA40;
+  }
+
+  /* TEXT STYLES */
+
+  h1 {
+    font-size: 2em;
+    padding: 20px 10px;
+    color: white;
+}
+legend {
+  font-size: 1em;
+  font-weight: 700;
+  padding-top: 20px;
+  text-align: center;
+}
+
+h1,
+button {
+    font-family: 'Bungee', cursive;   
+    text-align: center;
+}
+
+.newsletter-label {
+    font-size: 1em;
+    font-weight: 600;
+   text-transform: uppercase;
+   padding-top: 15px;
+}
+
+input[placeholder="required"] {
+    font-size: .5em;
+    text-align: right;
+}
+
+/*HEADER*/
 
   header {
     margin: 0 auto;  
     width: 100%;
-      background-color: #ffa69e;
       padding: 20px 10px;
+      text-align: center;
       
   }
 
-  h1 {
-      font-family: 'Bungee', cursive;  
-      font-size: 2.5em;
-      padding: 20px 10px;
-      color: white;
-      text-align: center;
+  .info {
+    width: 90%; 
+    margin: auto; 
+    text-align: center;
+      padding: 15px 5px;
+      border-bottom: solid 3px  #F3CA40;
   }
+
+  /* FORM DISPLAY */
+
+  .form {
+      width: 100%;
+      margin: 15px auto;
+      padding: 20px;
+      display: flex;
+  }
+
+.flex {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: none;
+}
+
+input, 
+select, 
+textarea {
+    border: none;
+    font-size: 16px;
+    height: auto;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input:hover, 
+select:hover, 
+textarea:hover {
+    opacity: 75%;
+    cursor: pointer;
+}
+
+
+
+.check,
+.inline-label {
+
+}
+
+/* BUTTON */
+button {
+    margin: 50px auto;
+    background-color: #011627;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    border-top: solid 3px  #F3CA40;
+
+}
+
+button:hover {
+    opacity: 75%;
+}
+
+/* FOOTER */
+
+footer {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: .8em;
+    padding: 10px;
+    border-top: solid 3px  #F3CA40;
+}
