@@ -58,24 +58,42 @@
         
             </fieldset>
 
-            <fieldset class="flex">
+            <fieldset class="flex newsletter">
        
                     <legend class="simple">Newsletter</legend>
 
                     <label class="newsletter-label">Topics</label>
-                    <div class="check"><label for="html-news" class="inline-label"><input type="checkbox" id="html-news" value="newsletter-html" name="newsletter-type"> HTML News</label></div>
                     
-                    <input type="checkbox" id="css-news" value="newsletter-css" name="newsletter-type"> <label for="css-news" class="inline-label">CSS News</label>
+                    <div class="group">
+                       <input type="checkbox" id="html-news" value="newsletter-html" name="newsletter-type" class="checkbox">
+                       <label for="html-news" class="inline-label"></label>HTML News</label>
+                    </div>
 
-                    <input type="checkbox" id="js-news" value="newsletter-js" name="newsletter-type"> <label for="js-news" class="inline-label">Javascript News</label>
+                    <div class="group">
+                        <input type="checkbox" id="css-news" value="newsletter-css" name="newsletter-type" class="checkbox">
+                        <label for="css-news" class="inline-label">CSS News</label>
+                    </div>
+
+                    <div class="group">
+                        <input type="checkbox" id="js-news" value="newsletter-js" name="newsletter-type" class="checkbox"> 
+                        <label for="js-news" class="inline-label">Javascript News</label>
+                    </div>
 
                     <label class="newsletter-label">Format</label>
-                    <input type="radio" id="html-format" name="format">HTML</label>
-                    <input type="radio" id="plain-text" name="format"><label for="plain-text" class="inline-label">Plain Text</label>
+
+                    <div class="group">
+                        <input type="radio" id="html-format" name="format" class="radio" >
+                        <label for="html-format" class="inline-label">HTML</label>
+                    </div>
+
+                    <div class="group">
+                        <input type="radio" id="plain-text" name="format" class="radio">
+                        <label for="plain-text" class="inline-label">Plain Text</label>
+                    </div>
                     
                     
                     <label for="comment">Did we miss something? Let us know what other topics you'd be interested in hearing about so we can keep our ears open!</label>
-                    <textarea id="comment" name="user-comment" class="color"></textarea>
+                    <textarea id="comment" name="user-comment" placeholder="I thought you'd never ask..."class="color"></textarea>
              
             </fieldset>
 
