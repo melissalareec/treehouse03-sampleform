@@ -67,29 +67,35 @@ button {
 
   /* FORM DISPLAY */
 
-  .form {
+  .form-wrapper {
       width: 100%;
-      margin: 15px auto;
-      padding: 20px;
-      display: flex;
+      margin: auto;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  fieldset {
+    width: 95%;
+    border: none;
+    outline: none;
   }
 
 .flex {
     margin: auto;
-    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.flex fieldset {
-    padding-bottom: 10px;
-    border: none; 
-}
-
-fieldset label, 
-fieldset input,
-fieldset select {
     margin-bottom: 10px;
 }
 
@@ -117,7 +123,6 @@ button  {
     cursor: pointer;
 }
 
-
 input:focus, 
 select:focus, 
 textarea:focus {
@@ -133,6 +138,14 @@ select:hover,
 textarea:hover {
     background: rgba(0, 0, 0, 5%)
 
+}
+
+input[type="number"] {
+    width: 50%;
+}
+
+label[for="zip"] {
+    margin-top: 10px;
 }
 
 .group {
@@ -160,9 +173,6 @@ textarea:hover {
 label[for="comment"] {
     margin-top: 20px;
    margin-bottom: 10px;
-}
-
-input[for="comment"] {
 }
 
 /* BUTTON */
@@ -203,4 +213,18 @@ footer {
        margin: auto;
         width: 50%;
 }
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.contact label {
+    min-width: 120px;
+}
+
+input[type="number"] {
+    width: 30%;
+}
+
 }

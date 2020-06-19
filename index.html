@@ -21,41 +21,55 @@
     </div>
  
     <div class="form-wrapper">
-        <form action="index.html" method="post" class= "flex">
+        <form action="index.html" method="post" >
         
             <fieldset class="flex">
                 
                     <legend class="simple">Contact Information</legend>
 
-                    <label for="name" class="">Full Name</label>
-                    <input type="text" id="name" placeholder="required" name="user_name" class="color">
+                    <div class="contact">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="required" name="user_name" class="color" required>
+                    </div>
 
-                    <label for="email" class="">Email Address</label>
-                    <input type="email" id="email" placeholder="required" name="user_email" class="color">
+                    <div class="contact">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="required" name="user_email" class="color" required>
+                    </div>
 
-                    <label for="tel" class="">Phone Number</label>
-                    <input type="tel" id="tel" name="user_tel" class="color">
+                    <div class="contact">
+                        <label for="tel">Phone Number</label>
+                        <input type="tel" id="tel" name="user_tel" class="color">
+                    </div>
 
-                    <label for="address" class="">Street Address</label>
-                    <input type="text" id="address" name="user_address" class="color">
+                    <div class="contact">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="user_address" class="color">
+                    </div>
 
-                    <label for="city" class="">City</label>
-                    <input type="text" id="city" name="user_city" class="color">
+                    <div class="contact">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="user_city" class="color">
+                    </div>
 
-                    <label for="state" class="">State</label>
-                    <select id="state" name="state" class="color">
-                        <option value="alaska">Alaska</option>
-                        <option value="arkansas">Arkansas</option>
-                        <option value="alabama">Alabama</option>
-                        <option value="arizona">Arizona</option>
-                        <option value="california">California</option>
-                        <option value="colorado">Colorado</option>
-                        <option value="connecticut">Connecticut</option>
-                    </select>
+                    <div class="contact">
+                        <label for="state">State</label>
+                        <select id="state" name="state" class="color">
+                            <option value="alaska">Alaska</option>
+                            <option value="arkansas">Arkansas</option>
+                            <option value="alabama">Alabama</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="california">California</option>
+                            <option value="colorado">Colorado</option>
+                            <option value="connecticut">Connecticut</option>
+                        </select>
+                    </div>
 
-                    <label for="zip" class="">Zipcode</label>
-                    <input type="number" id="zip" name="user_zip" class="color">
-        
+                    <div class="contact">
+                        <label for="zip">Zipcode</label>
+                        <input type="number" id="zip" name="user_zip" class="color">
+                    </div>
+
             </fieldset>
 
             <fieldset class="flex newsletter">
